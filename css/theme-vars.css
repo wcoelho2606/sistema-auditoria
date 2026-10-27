@@ -1,1 +1,45 @@
+:root {
+  --ink: #1c2630;
+  --muted: #5d6b78;
+  --paper: #eef1f4;
+  --card: #fff;
+  --line: #d3dae0;
+  --accent: #27567f;
+  --brand-orange: #d35400;
+  --sidebar-bg: #1a2b3c;
+  --sidebar-hover: rgba(255, 255, 255, 0.08);
+  --sidebar-active: linear-gradient(90deg, rgba(211, 84, 0, 0.85) 0%, rgba(211, 84, 0, 0.4) 100%);
+  --ok: #1d7a4b;
+  --nok: #bd2f27;
+  --wait: #46515c;
+  --accent-btn: #27567f;
+  --icon-bg: #fbeee6;
+  --btn-bg: #fff;
+  --btn-ink: #1c2630;
+  --warn-bg: #fffdf0;
+  --sidebar-w: 240px;
+}
+
+/* Tema escuro automático */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #e6ebef; --muted: #a3b0bb; --paper: #12181e; --card: #1a222a; --line: #34414d;
+    --accent: #7db3e6; --accent-btn: #2f6ea8; --brand-orange: #e67e22; --sidebar-bg: #0f1a24;
+    --ok: #2e9e66; --nok: #e0625a; --wait: #3a4651;
+    --icon-bg: #3a2a1e; --btn-bg: #26323d; --btn-ink: #e6ebef; --warn-bg: #2f2a12;
+    color-scheme: dark;
+  }
+}
+
+/* Tema escuro forçado */
+:root[data-theme="dark"] {
+  --ink: #e6ebef; --muted: #a3b0bb; --paper: #12181e; --card: #1a222a; --line: #34414d;
+  --accent: #7db3e6; --accent-btn: #2f6ea8; --brand-orange: #e67e22; --sidebar-bg: #0f1a24;
+  --ok: #2e9e66; --nok: #e0625a; --wait: #3a4651;
+  --icon-bg: #3a2a1e; --btn-bg: #26323d; --btn-ink: #e6ebef; --warn-bg: #2f2a12;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; min-height: 100vh; }
 
