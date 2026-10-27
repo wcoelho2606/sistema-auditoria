@@ -1,1 +1,24 @@
+/* TABELAS ORIGINAIS E COMPONENTES */
+.tablewrap { overflow-x: auto; border-radius: 8px; border: 1px solid var(--line); }
+table { border-collapse: collapse; width: 100%; min-width: 950px; background: var(--card); }
+th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; font-size: .85rem; }
+th { background: #1f4e79; color: #fff; font-weight: 600; text-align: center; border: 1px solid rgba(255, 255, 255, 0.2); }
+th.sub { background: #2d6296; font-weight: 400; font-size: .74rem; }
+.band td { background: #1f4e79; color: #fff; font-weight: 700; font-size: .9rem; }
+td { border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+td.in input, td.in select { padding: 5px; min-width: 56px; font-size: .82rem; }
+td.in input.w { min-width: 90px; }
+
+.stsel { min-width: 108px; font-weight: 700; }
+.stsel.ok { background: var(--ok); color: #fff; }
+.stsel.nok { background: var(--nok); color: #fff; }
+.empty { padding: 28px; text-align: center; color: var(--muted); }
+
+/* BADGES DE STATUS NO CRONOGRAMA */
+.status-tag { padding: 6px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; text-align: center; display: inline-block; width: 100%; color: #fff; }
+.status-previsto { background: #01579b; color: #fff; }
+.status-realizado { background: #2e7d32; color: #fff; }
+.status-quebra { background: #2e7d32; color: #fff; }
+.status-reprogramado { background: #a04000; color: #fff; }
+.badge-nao-aplica { background: #586069; color: #fff; padding: 5px 12px; border-radius: 6px; font-size: 0.78rem; }
 
